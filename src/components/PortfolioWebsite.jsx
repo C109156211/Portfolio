@@ -145,9 +145,9 @@ const PortfolioWebsite = () => {
       {/* 3. Features Section */}
       <section className="min-h-screen relative overflow-hidden flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <img 
-            src="/backgrounds/features-bg.jpg" 
+            src="public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (2).png" 
             alt="Features Background" 
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -255,9 +255,9 @@ const PortfolioWebsite = () => {
       {/* 5. Meet the Makers Section */}
       <section className="min-h-screen relative overflow-hidden flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <img 
-            src="/backgrounds/team-bg.jpg" 
+            src="/public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (1).png" 
             alt="Team Background" 
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -272,11 +272,13 @@ const PortfolioWebsite = () => {
             {/* Left side - Text */}
             <div className="text-white">
               <h2 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
-                Meet the makers
+                響應式設計
               </h2>
               <p className="text-lg leading-relaxed opacity-80 max-w-lg">
-                Talk about your company's background, history, mission, vision, or philosophy. 
-                Introduce your brand's persona to your partners and customers.
+                ☻ 提升手機直橫式的操作流暢度
+              </p>
+              <p className="text-lg leading-relaxed opacity-80 max-w-lg">
+                ☻ 依據不同螢幕尺寸，調整適合的版面配置
               </p>
             </div>
             
