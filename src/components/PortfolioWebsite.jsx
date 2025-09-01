@@ -44,7 +44,7 @@ const PortfolioWebsite = () => {
             {/* Right side - Portfolio Images */}
             <div className="relative">
               {/* Main Portfolio Image */}
-              <div className="relative z-20 left-40">
+              <div className="relative  left-80">
                 <div className="w-[70%] h-[80%] bg-white rounded-3xl shadow-2xl transform  overflow-hidden">
                   <div>
                     <div className="text-center text-gray-500">
@@ -55,8 +55,8 @@ const PortfolioWebsite = () => {
               </div>
               
               {/* Secondary Portfolio Image */}
-              <div className="absolute -left-40 top-80 z-10">
-                <div className="w-[70%] h-[80%]  rounded-lg transform -rotate-12 overflow-hidden">
+              <div className="absolute -left-40 top-40 z-10">
+                <div className="w-[60%] h-[80%]  rounded-lg transform  overflow-hidden">
                   <div>
                     <img src="public/images/手機 首頁.png"  className="w-full h-full object-cover" />
                   </div>
@@ -133,7 +133,7 @@ const PortfolioWebsite = () => {
                 </div>
               </div>
               <div className="absolute -left-50 top-80 z-10 z-10">
-                <div className="w-[70%] h-[60%] rounded-3xl transform  overflow-hidden">
+                <div className="w-[60%] h-[60%] rounded-3xl transform  overflow-hidden">
                   <img src="public/images/手機 介紹.png"  className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -284,28 +284,9 @@ const PortfolioWebsite = () => {
             
             {/* Right side - Laptop Mockup */}
             <div className="relative">
-              <div className="relative z-20">
-                <div className="w-80 h-48 bg-gray-800 rounded-lg shadow-2xl transform rotate-6">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-200 to-green-200 rounded-lg p-2">
-                    <div className="w-full h-full bg-white rounded shadow-inner"></div>
-                  </div>
+            <div className="w-[120%] rounded-3xl transform  overflow-hidden">
+                  <img src="public/images/RWD.jpg"  className="w-full h-full object-cover" />
                 </div>
-                <div className="w-80 h-4 bg-gray-700 rounded-b-lg shadow-lg"></div>
-              </div>
-              
-              {/* Hand with Image */}
-              <div className="absolute -right-10 top-10 z-10">
-                <div className="w-32 h-24 bg-white rounded-lg shadow-lg transform -rotate-12">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-100 to-green-100 rounded-lg p-2">
-                    <div className="w-full h-full bg-white rounded shadow-inner"></div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Tip Text */}
-              <div className="absolute bottom-0 left-0 text-white/60 text-sm">
-                Tip: Drag and drop your image over the mockup.
-              </div>
             </div>
           </div>
         </div>
