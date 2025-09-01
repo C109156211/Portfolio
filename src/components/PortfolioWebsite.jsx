@@ -10,8 +10,7 @@ const PortfolioWebsite = () => {
           <img 
             src="public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (4).png" 
             alt="Hero Background" 
-            className="w-full h-full object-cover"
-            sizes='50'
+            className="absolute -translate-x-1/5 -translate-y-1/4 scale-[2]"
             onError={(e) => {
               e.target.style.display = 'none';
               e.target.nextSibling.style.display = 'block';
@@ -45,39 +44,21 @@ const PortfolioWebsite = () => {
             {/* Right side - Portfolio Images */}
             <div className="relative">
               {/* Main Portfolio Image */}
-              <div className="relative z-20">
-                <div className="w-64 h-96 bg-white rounded-3xl shadow-2xl transform rotate-12 overflow-hidden">
-                  <img 
-                    src="/images/portfolio-main.jpg" 
-                    alt="Portfolio Main Image" 
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
+              <div className="relative z-20 left-40">
+                <div className="w-[70%] h-[80%] bg-white rounded-3xl shadow-2xl transform  overflow-hidden">
                   <div>
                     <div className="text-center text-gray-500">
-                      <img src="public/images/Tech Website in Black Orange Blue Cool Corporate Style.png" alt="Portfolio Main Image" className="w-full h-full object-cover" />
+                      <img src="public/images/筆電.png" alt="Portfolio Main Image" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
               </div>
               
               {/* Secondary Portfolio Image */}
-              <div className="absolute -left-20 top-20 z-10">
-                <div className="w-80 h-48 bg-white rounded-lg shadow-2xl transform -rotate-6 overflow-hidden">
-                  <img 
-                    src="/images/portfolio-secondary.jpg" 
-                    alt="Portfolio Secondary Image" 
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
+              <div className="absolute -left-40 top-80 z-10">
+                <div className="w-[70%] h-[80%]  rounded-lg transform -rotate-12 overflow-hidden">
                   <div>
-                    <img src="public/images/Tech Website in Black Orange Blue Cool Corporate Style (1).png" alt="Portfolio Secondary Image" className="w-full h-full object-cover" />
+                    <img src="public/images/手機 首頁.png"  className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -88,19 +69,40 @@ const PortfolioWebsite = () => {
 
       {/* 2. About/Description Section */}
       <section className="min-h-screen relative overflow-hidden flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img 
-            src="/backgrounds/about-bg.jpg" 
-            alt="About Background" 
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'block';
-            }}
-          />
-          <div className="absolute inset-0 bg-black/50" style={{display: 'none'}}></div>
-        </div>
+        {/* Background with Circular Gradient */}
+        {/* Background: big teal circle + soft glows */}
+      <div className="absolute inset-0 bg-[#0b0b0b] overflow-hidden">
+        {/* 主圓：藍綠漸層，只有左半露出 */}
+        <div
+          className="
+            absolute top-1/2 -left-1/3 -translate-y-1/2
+            w-[1200px] h-[1200px] rounded-full 
+            bg-[radial-gradient(closest-side,rgba(78,200,212,0.8),rgba(78,200,212,0.45)_55%,rgba(136,108,180,0.28)_72%,transparent_78%)]
+
+            will-change-transform
+          "
+        />
+
+        {/* 輔助光暈（左下紫） */}
+        <div
+          className="
+            absolute left-[28%] bottom-[200px]
+            w-[700px] h-[700px] rounded-full blur-3xl opacity-70
+            bg-[radial-gradient(closest-side,rgba(168,85,247,0.45),transparent_70%)]
+          "
+        />
+
+        {/* 輔助光暈（右下青） */}
+        <div
+          className="
+            absolute right-[200px] bottom-[-120px]
+            w-[520px] h-[520px] rounded-full blur-3xl opacity-60
+            bg-[radial-gradient(closest-side,rgba(45,212,191,0.35),transparent_72%)]
+          "
+        />
+      </div>
+
+        
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Chinese Text */}
@@ -125,48 +127,14 @@ const PortfolioWebsite = () => {
             {/* Right side - Portfolio Images */}
             <div className="relative">
               {/* Main Portfolio Image */}
-              <div className="relative z-20">
-                <div className="w-64 h-96 bg-white rounded-3xl shadow-2xl transform rotate-12 overflow-hidden">
-                  <img 
-                    src="/images/portfolio-about.jpg" 
-                    alt="Portfolio About Image" 
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
-                  <div className="w-full h-full bg-gradient-to-br from-pink-100 to-blue-100 rounded-3xl p-4 flex items-center justify-center" style={{display: 'none'}}>
-                    <div className="text-center text-gray-500">
-                      <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span className="text-2xl">🎨</span>
-                      </div>
-                      <p className="text-sm">請添加 portfolio-about.jpg</p>
-                    </div>
-                  </div>
+              <div className="relative">
+                <div className="w-[100%] h-[100%] rounded-3xl shadow-2xl transform  overflow-hidden">
+                  <img src="public/images/介紹.png"  className="w-full h-full object-cover" />
                 </div>
               </div>
-              
-              {/* Secondary Portfolio Image */}
-              <div className="absolute -right-10 bottom-20 z-10">
-                <div className="w-40 h-60 bg-white rounded-3xl shadow-xl transform -rotate-6 overflow-hidden">
-                  <img 
-                    src="/images/portfolio-detail.jpg" 
-                    alt="Portfolio Detail Image" 
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
-                  <div className="w-full h-full bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-3 flex items-center justify-center" style={{display: 'none'}}>
-                    <div className="text-center text-gray-500">
-                      <div className="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-lg">✨</span>
-                      </div>
-                      <p className="text-xs">請添加 portfolio-detail.jpg</p>
-                    </div>
-                  </div>
+              <div className="absolute -left-50 top-80 z-10 z-10">
+                <div className="w-[70%] h-[60%] rounded-3xl transform  overflow-hidden">
+                  <img src="public/images/手機 介紹.png"  className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -252,21 +220,15 @@ const PortfolioWebsite = () => {
       <section className="min-h-screen relative overflow-hidden flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img 
-            src="/backgrounds/colors-bg.jpg" 
-            alt="Colors Background" 
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'block';
-            }}
-          />
           <div className="absolute inset-0 bg-black/70" style={{display: 'none'}}></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
 
           
           <div className="text-center">
+            <div className='w-100'>
+            <img src="public/images/naily_icon.jpg" alt="Colors Background" className="w-[6%] h-[6%] object-cover rounded-[1.5rem] mb-[8rem]" />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto">
               {/* Primary Color Card */}
               <div className="bg-gray-800 rounded-2xl p-8">
@@ -335,10 +297,6 @@ const PortfolioWebsite = () => {
                   <div className="w-full h-full bg-gradient-to-br from-blue-100 to-green-100 rounded-lg p-2">
                     <div className="w-full h-full bg-white rounded shadow-inner"></div>
                   </div>
-                </div>
-                {/* Steph Label */}
-                <div className="absolute -left-20 top-1/2 transform -translate-y-1/2 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                  Steph →
                 </div>
               </div>
               
