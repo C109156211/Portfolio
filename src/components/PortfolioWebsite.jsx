@@ -93,10 +93,7 @@ const PortfolioWebsite = () => {
                     <div className="w-full h-full bg-white rounded-2xl shadow-inner"></div>
                   </div>
                 </div>
-                {/* Amelia Liao Label */}
-                <div className="absolute -left-20 top-1/2 transform -translate-y-1/2 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                  Amelia Liao →
-                </div>
+
               </div>
             </div>
           </div>
@@ -104,7 +101,7 @@ const PortfolioWebsite = () => {
       </section>
 
       {/* 3. Features Section */}
-      <section className="min-h-screen bg-gradient-to-r from-blue-900 to-black relative overflow-hidden flex items-center">
+      <section className="min-h-screen bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden flex items-center">
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
@@ -166,30 +163,25 @@ const PortfolioWebsite = () => {
       {/* 4. Color Palette Section */}
       <section className="min-h-screen bg-black relative overflow-hidden flex items-center">
         <div className="container mx-auto px-6 relative z-10">
-          {/* N Logo */}
-          <div className="absolute top-20 right-20">
-            <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-2xl">N</span>
-            </div>
-          </div>
+
           
           <div className="text-center">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto">
               {/* Primary Color Card */}
               <div className="bg-gray-800 rounded-2xl p-8">
-                <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-pink-500 rounded-full mx-auto mb-4"></div>
+                <div className="w-64 h-64 bg-gradient-to-br from-red-500 to-pink-500 rounded-full mx-auto mb-4"></div>
                 <p className="text-white font-semibold">主色 #BE1F48</p>
               </div>
               
               {/* Secondary Color Card */}
               <div className="bg-gray-800 rounded-2xl p-8">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-4"></div>
+                <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-4"></div>
                 <p className="text-white font-semibold">次色 #005B96</p>
               </div>
               
               {/* Grayscale Card */}
               <div className="bg-gray-800 rounded-2xl p-8">
-                <div className="w-24 h-24 bg-gradient-to-br from-gray-300 to-gray-600 rounded-full mx-auto mb-4"></div>
+                <div className="w-64 h-64 bg-gradient-to-br from-gray-300 to-gray-600 rounded-full mx-auto mb-4"></div>
                 <p className="text-white font-semibold">灰階</p>
               </div>
             </div>
@@ -198,7 +190,7 @@ const PortfolioWebsite = () => {
       </section>
 
       {/* 5. Meet the Makers Section */}
-      <section className="min-h-screen bg-gradient-to-r from-blue-900 to-black relative overflow-hidden flex items-center">
+      <section className="min-h-screen bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden flex items-center">
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
