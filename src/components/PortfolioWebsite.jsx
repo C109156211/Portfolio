@@ -4,13 +4,28 @@ const PortfolioWebsite = () => {
   return (
     <div className="min-h-screen">
       {/* 1. Header/Hero Section */}
-      <section className="min-h-screen bg-gradient-to-br from-orange-800 via-orange-700 to-blue-900 relative overflow-hidden flex items-center">
+      <section className="min-h-screen relative overflow-hidden flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
+          <img 
+            src="public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (4).png" 
+            alt="Hero Background" 
+            className="w-full h-full object-cover"
+            sizes='50'
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
+          />
+          <div className="absolute inset-0 bg-black/40" style={{display: 'none'}}></div>
+        </div>
+        
         {/* Background decorative elements */}
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-32 h-32 bg-white/10 rounded-full"></div>
           <div className="absolute bottom-40 right-40 w-24 h-24 bg-white/10 rounded-full"></div>
           <div className="absolute top-1/2 left-1/3 w-20 h-20 bg-white/10 rounded-full"></div>
-        </div>
+        </div> */}
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -27,25 +42,44 @@ const PortfolioWebsite = () => {
               </p>
             </div>
             
-            {/* Right side - Device Mockups */}
+            {/* Right side - Portfolio Images */}
             <div className="relative">
-              {/* iPhone Mockup */}
+              {/* Main Portfolio Image */}
               <div className="relative z-20">
-                <div className="w-64 h-96 bg-white rounded-3xl shadow-2xl transform rotate-12">
-                  <div className="w-full h-full bg-gradient-to-br from-pink-100 to-blue-100 rounded-3xl p-4">
-                    <div className="w-full h-full bg-white rounded-2xl shadow-inner"></div>
+                <div className="w-64 h-96 bg-white rounded-3xl shadow-2xl transform rotate-12 overflow-hidden">
+                  <img 
+                    src="/images/portfolio-main.jpg" 
+                    alt="Portfolio Main Image" 
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div>
+                    <div className="text-center text-gray-500">
+                      <img src="public/images/Tech Website in Black Orange Blue Cool Corporate Style.png" alt="Portfolio Main Image" className="w-full h-full object-cover" />
+                    </div>
                   </div>
                 </div>
               </div>
               
-              {/* Laptop Mockup */}
+              {/* Secondary Portfolio Image */}
               <div className="absolute -left-20 top-20 z-10">
-                <div className="w-80 h-48 bg-gray-800 rounded-lg shadow-2xl transform -rotate-6">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-200 to-green-200 rounded-lg p-2">
-                    <div className="w-full h-full bg-white rounded shadow-inner"></div>
+                <div className="w-80 h-48 bg-white rounded-lg shadow-2xl transform -rotate-6 overflow-hidden">
+                  <img 
+                    src="/images/portfolio-secondary.jpg" 
+                    alt="Portfolio Secondary Image" 
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div>
+                    <img src="public/images/Tech Website in Black Orange Blue Cool Corporate Style (1).png" alt="Portfolio Secondary Image" className="w-full h-full object-cover" />
                   </div>
                 </div>
-                <div className="w-80 h-4 bg-gray-700 rounded-b-lg shadow-lg"></div>
               </div>
             </div>
           </div>
@@ -53,7 +87,20 @@ const PortfolioWebsite = () => {
       </section>
 
       {/* 2. About/Description Section */}
-      <section className="min-h-screen bg-gradient-to-br from-orange-800 via-orange-700 to-blue-900 relative overflow-hidden flex items-center">
+      <section className="min-h-screen relative overflow-hidden flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/backgrounds/about-bg.jpg" 
+            alt="About Background" 
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
+          />
+          <div className="absolute inset-0 bg-black/50" style={{display: 'none'}}></div>
+        </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Chinese Text */}
@@ -75,25 +122,52 @@ const PortfolioWebsite = () => {
               </div>
             </div>
             
-            {/* Right side - Device Mockups */}
+            {/* Right side - Portfolio Images */}
             <div className="relative">
-              {/* Main iPhone */}
+              {/* Main Portfolio Image */}
               <div className="relative z-20">
-                <div className="w-64 h-96 bg-white rounded-3xl shadow-2xl transform rotate-12">
-                  <div className="w-full h-full bg-gradient-to-br from-pink-100 to-blue-100 rounded-3xl p-4">
-                    <div className="w-full h-full bg-white rounded-2xl shadow-inner"></div>
+                <div className="w-64 h-96 bg-white rounded-3xl shadow-2xl transform rotate-12 overflow-hidden">
+                  <img 
+                    src="/images/portfolio-about.jpg" 
+                    alt="Portfolio About Image" 
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-gradient-to-br from-pink-100 to-blue-100 rounded-3xl p-4 flex items-center justify-center" style={{display: 'none'}}>
+                    <div className="text-center text-gray-500">
+                      <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span className="text-2xl">🎨</span>
+                      </div>
+                      <p className="text-sm">請添加 portfolio-about.jpg</p>
+                    </div>
                   </div>
                 </div>
               </div>
               
-              {/* Smaller iPhone */}
+              {/* Secondary Portfolio Image */}
               <div className="absolute -right-10 bottom-20 z-10">
-                <div className="w-40 h-60 bg-white rounded-3xl shadow-xl transform -rotate-6">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-3">
-                    <div className="w-full h-full bg-white rounded-2xl shadow-inner"></div>
+                <div className="w-40 h-60 bg-white rounded-3xl shadow-xl transform -rotate-6 overflow-hidden">
+                  <img 
+                    src="/images/portfolio-detail.jpg" 
+                    alt="Portfolio Detail Image" 
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-3 flex items-center justify-center" style={{display: 'none'}}>
+                    <div className="text-center text-gray-500">
+                      <div className="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-lg">✨</span>
+                      </div>
+                      <p className="text-xs">請添加 portfolio-detail.jpg</p>
+                    </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -101,7 +175,21 @@ const PortfolioWebsite = () => {
       </section>
 
       {/* 3. Features Section */}
-      <section className="min-h-screen bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden flex items-center">
+      <section className="min-h-screen relative overflow-hidden flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/backgrounds/features-bg.jpg" 
+            alt="Features Background" 
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
+          />
+          <div className="absolute inset-0 bg-black/60" style={{display: 'none'}}></div>
+        </div>
+        
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
@@ -161,7 +249,20 @@ const PortfolioWebsite = () => {
       </section>
 
       {/* 4. Color Palette Section */}
-      <section className="min-h-screen bg-black relative overflow-hidden flex items-center">
+      <section className="min-h-screen relative overflow-hidden flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/backgrounds/colors-bg.jpg" 
+            alt="Colors Background" 
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
+          />
+          <div className="absolute inset-0 bg-black/70" style={{display: 'none'}}></div>
+        </div>
         <div className="container mx-auto px-6 relative z-10">
 
           
@@ -190,7 +291,20 @@ const PortfolioWebsite = () => {
       </section>
 
       {/* 5. Meet the Makers Section */}
-      <section className="min-h-screen bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden flex items-center">
+      <section className="min-h-screen relative overflow-hidden flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/backgrounds/team-bg.jpg" 
+            alt="Team Background" 
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
+          />
+          <div className="absolute inset-0 bg-black/50" style={{display: 'none'}}></div>
+        </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
@@ -238,7 +352,20 @@ const PortfolioWebsite = () => {
       </section>
 
       {/* 6. Contact Section */}
-      <section className="min-h-screen bg-gradient-to-r from-orange-800 to-blue-900 relative overflow-hidden flex items-center">
+      <section className="min-h-screen relative overflow-hidden flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/backgrounds/contact-bg.jpg" 
+            alt="Contact Background" 
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
+          />
+          <div className="absolute inset-0 bg-black/60" style={{display: 'none'}}></div>
+        </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Background */}
