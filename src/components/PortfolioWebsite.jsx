@@ -107,7 +107,7 @@ const PortfolioWebsite = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Chinese Text */}
             <div className="text-white">
-              <h2 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                 日秀美學 Naily
               </h2>
               <p className="text-xl lg:text-2xl mb-8 opacity-90">
@@ -162,9 +162,10 @@ const PortfolioWebsite = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
             <div className="text-white">
-              <h2 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+              <h2 className="text-5xl lg:text-4xl font-bold mb-8 leading-tight">
                 Features
               </h2>
+              <img src="public/images/辨識.png" alt="Features Background" className="w-[100%] h-[100%] object-cover" />
             </div>
             
             {/* Right side - Features Panel */}
@@ -173,39 +174,30 @@ const PortfolioWebsite = () => {
                 <div className="space-y-8">
                   {/* Feature 1 */}
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-4 h-4 bg-gray-800 rounded-full"></div>
-                    </div>
                     <div>
-                      <h3 className="text-white font-semibold text-lg mb-2">User-friendly</h3>
+                      <h3 className="text-white font-semibold text-lg mb-2">🖐️ 使用者友善</h3>
                       <p className="text-white/80 text-sm">
-                        Write here a key feature of the app or software that is being advertised here.
+                        提供直觀的拍攝指引，包含側拍示範圖片與範例框線，幫助使用者快速理解正確的操作方式。
                       </p>
                     </div>
                   </div>
                   
                   {/* Feature 2 */}
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-4 h-4 bg-gray-800 rounded-full"></div>
-                    </div>
                     <div>
-                      <h3 className="text-white font-semibold text-lg mb-2">Seamless integration</h3>
+                      <h3 className="text-white font-semibold text-lg mb-2">🔗 流暢整合</h3>
                       <p className="text-white/80 text-sm">
-                        Write here a key feature of the app or software that is being advertised here.
+                        針對每隻手指給予拍攝提示與專屬框線，引導使用者自然完成拍攝流程，不需額外學習即可上手。
                       </p>
                     </div>
                   </div>
                   
                   {/* Feature 3 */}
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-4 h-4 bg-gray-800 rounded-full"></div>
-                    </div>
                     <div>
-                      <h3 className="text-white font-semibold text-lg mb-2">Secure & safe</h3>
+                      <h3 className="text-white font-semibold text-lg mb-2">🔒 安全可靠</h3>
                       <p className="text-white/80 text-sm">
-                        Write here a key feature of the app or software that is being advertised here.
+                        透過精準的框線與指甲片大小指引，避免錯誤取景，確保 AI 模型獲得最準確的輸入資料，提升分析結果的可信度。
                       </p>
                     </div>
                   </div>
@@ -219,7 +211,7 @@ const PortfolioWebsite = () => {
       {/* 4. Color Palette Section */}
       <section className="min-h-screen relative overflow-hidden flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <div className="absolute inset-0 bg-black/70" style={{display: 'none'}}></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
@@ -227,32 +219,54 @@ const PortfolioWebsite = () => {
           
           <div className="text-center">
             <div className='w-100'>
-            <img src="public/images/naily_icon.jpg" alt="Colors Background" className="w-[6%] h-[6%] object-cover rounded-[1.5rem] mb-[8rem]" />
+              <img src="public/images/naily logo.png" alt="Colors Background" className="w-[6%] h-[6%] object-cover mb-[8rem]" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-100 mx-auto">
               {/* Primary Color Card */}
-              <div className="bg-gray-800 rounded-2xl p-8">
-                <div className="w-64 h-64 bg-gradient-to-br from-red-500 to-pink-500 rounded-full mx-auto mb-4"></div>
-                <p className="text-white font-semibold">主色 #BE1F48</p>
+              <div 
+                className=" p-8 bg-cover bg-center bg-no-repeat" 
+                style={{
+                  backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
+                  height: '120%',
+                  width: '100%'
+                }}
+              >
+                <img src="public/images/Ellipse 159.png" alt="Colors Background" className="object-cover mb-[8rem]" />
+                <p className="text-white font-semibold drop-shadow-lg">主色 #BE1F48</p>
               </div>
               
               {/* Secondary Color Card */}
-              <div className="bg-gray-800 rounded-2xl p-8">
-                <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-4"></div>
-                <p className="text-white font-semibold">次色 #005B96</p>
+              <div 
+                className=" p-8 bg-cover bg-center bg-no-repeat" 
+                style={{
+                  backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
+                  height: '120%',
+                  width: '100%'
+                }}
+              >
+                <img src="public/images/Ellipse 160.png" alt="Colors Background" className="object-cover mb-[8rem]" />
+                <p className="text-white font-semibold drop-shadow-lg">次色 #005B96</p>
               </div>
               
               {/* Grayscale Card */}
-              <div className="bg-gray-800 rounded-2xl p-8">
-                <div className="w-64 h-64 bg-gradient-to-br from-gray-300 to-gray-600 rounded-full mx-auto mb-4"></div>
-                <p className="text-white font-semibold">灰階</p>
+              <div 
+                className=" p-8 bg-cover bg-center bg-no-repeat" 
+                style={{
+                  backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
+                  height: '120%',
+                  width: '100%'
+                }}
+              >
+                <img src="public/images/Ellipse 161.png" alt="Colors Background" className="object-cover mb-[8rem]" />
+                <p className="text-white font-semibold drop-shadow-lg">灰階</p>
               </div>
+
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. Meet the Makers Section */}
+      {/* 5. RWD */}
       <section className="min-h-screen relative overflow-hidden flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
@@ -271,7 +285,7 @@ const PortfolioWebsite = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
             <div className="text-white">
-              <h2 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+              <h2 className="text-5xl lg:text-3xl font-bold mb-8 leading-tight">
                 響應式設計
               </h2>
               <p className="text-lg leading-relaxed opacity-80 max-w-lg">
@@ -284,7 +298,7 @@ const PortfolioWebsite = () => {
             
             {/* Right side - Laptop Mockup */}
             <div className="relative">
-            <div className="w-[120%] rounded-3xl transform  overflow-hidden">
+            <div className="w-[120%] transform  overflow-hidden">
                   <img src="public/images/RWD.jpg"  className="w-full h-full object-cover" />
                 </div>
             </div>
@@ -295,17 +309,13 @@ const PortfolioWebsite = () => {
       {/* 6. Contact Section */}
       <section className="min-h-screen relative overflow-hidden flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <img 
-            src="/backgrounds/contact-bg.jpg" 
+            src="public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style1.png" 
             alt="Contact Background" 
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'block';
-            }}
+            className="w-full h-full object-cover transform scale-[3] origin-center" sizes='100%'
           />
-          <div className="absolute inset-0 bg-black/60" style={{display: 'none'}}></div>
+          {/* <div className="absolute inset-0 bg-black/60" style={{display: 'none'}}></div> */}
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -314,22 +324,22 @@ const PortfolioWebsite = () => {
             
             {/* Right side - Contact Info */}
             <div className="text-white">
-              <h2 className="text-5xl lg:text-7xl font-bold mb-12 leading-tight">
-                Contact
+              <h2 className="text-5xl lg:text-3xl font-bold mb-12 leading-tight">
+                聯絡資訊
               </h2>
               
               <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Phone</h3>
-                  <p className="text-lg opacity-80">(123) 456 7890</p>
+                  <p className="text-lg opacity-80">0978-530-896</p>
                 </div>
                 
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Email</h3>
-                  <p className="text-lg opacity-80">hello@reallygreatsite.com</p>
+                  <p className="text-lg opacity-80">cccc1030026ogmail.com</p>
                 </div>
                 
-                <div>
+                {/* <div>
                   <h3 className="text-xl font-semibold mb-2">Social</h3>
                   <div className="flex gap-4 mt-2">
                     <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
@@ -339,7 +349,7 @@ const PortfolioWebsite = () => {
                       <span className="text-blue-900 font-bold text-sm">📷</span>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
