@@ -5,12 +5,12 @@ function Home() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+          {/* <h1 className="text-5xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             歡迎來到我的作品集
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
             探索我的專案和創意作品
-          </p>
+          </p> */}
           
           {/* 關於我按鈕
           <div className="mb-12">
@@ -26,6 +26,49 @@ function Home() {
           </div> */}
         </div>
 
+        {/* Intro Section: 姓名 / 一句話描述 / 重點經歷 */}
+        <section className="max-w-6xl mx-auto mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Left: Text */}
+            <div>
+              <p className="text-gray-400 text-lg mb-2">哈囉，我是</p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-2">廖序耘 Amelia</h2>
+              <p className="text-xl md:text-2xl font-semibold tracking-tight mb-6">
+                我是一位擁有資管背景、專精數位介面設計的 <span className="whitespace-nowrap">UI/UX 設計師</span>
+              </p>
+              <div className="border-t border-dashed border-gray-600/40 my-6"></div>
+              <ul className="space-y-3 text-gray-200">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-blue-400">✔</span>
+                  <span>兩件實戰接案經驗，包含使用者介面與管理者後台系統設計</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-blue-400">✔</span>
+                  <span>運用 AI 生成技術創造視覺素材</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-blue-400">✔</span>
+                  <span>擅長與業主直接溝通協作，深入理解需求</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-blue-400">✔</span>
+                  <span>涵蓋電商平台與行動應用等多元領域</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Right: Profile Image (optional) */}
+            <div className="relative w-full max-w-md lg:ml-auto">
+              <img
+                src="public/images/profile.jpg"
+                alt="Profile"
+                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              />
+            </div>
+          </div>
+        </section>
+
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Link 
             to="/naily" 
@@ -38,7 +81,7 @@ function Home() {
             <div className="relative z-10">
               <h2 className="text-3xl font-bold mb-4 text-white drop-shadow-lg">Naily 專案</h2>
               <p className="text-gray-200 mb-6 drop-shadow-lg">
-                美甲店管理系統，提供完整的預約和會員管理功能
+                AI客製化美甲貼片 官網、APP、管理者後台設計
               </p>
               <div className="flex items-center text-blue-200 group-hover:text-white transition-colors">
                 <span className="mr-2">查看專案</span>
@@ -60,9 +103,9 @@ function Home() {
             <div className="relative z-10">
               <h2 className="text-3xl font-bold mb-4 text-white drop-shadow-lg">日語智彙王</h2>
               <p className="text-gray-200 mb-6 drop-shadow-lg">
-                日語學習應用程式，提供互動式詞彙學習和測驗功能
+                日語學習應用程式，提供互動式詞彙學習和遊戲化體驗
               </p>
-              <div className="flex items-center text-orange-200 group-hover:text-white transition-colors">
+              <div className="flex items-center text-blue-200 group-hover:text-white transition-colors">
                 <span className="mr-2">查看專案</span>
                 <svg className="w-5 h-5 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -71,8 +114,10 @@ function Home() {
             </div>
           </Link>
         </div>
+            
 
-        <div className="mt-16 text-center">
+        {/* linkedin and github link */}
+        {/* <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-6">
             <a 
               href="https://github.com" 
@@ -95,7 +140,7 @@ function Home() {
               </svg>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
