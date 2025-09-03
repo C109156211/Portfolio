@@ -29,9 +29,10 @@ function Home() {
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Link 
             to="/naily" 
-            className="group relative overflow-hidden rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-contain bg-no-repeat"
+            className="group relative overflow-hidden rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-cover bg-center bg-no-repeat min-h-[220px] md:min-h-[260px]"
             style={{
               backgroundImage: 'url("public/backgrounds/features bg.png")',
+              border:"1px white solid",
             }}
           >
             <div className="relative z-10">
@@ -50,9 +51,10 @@ function Home() {
 
           <Link 
             to="/japan" 
-            className="group relative overflow-hidden rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-contain bg-no-repeat"
+            className="group relative overflow-hidden rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-cover bg-center bg-no-repeat min-h-[220px] md:min-h-[260px]"
             style={{
               backgroundImage: 'url("public/backgrounds/features bg.png")',
+              border:"1px white solid",
             }}
           >
             <div className="relative z-10">
