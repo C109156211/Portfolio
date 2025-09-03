@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.color-palette-intro{
+  font-size: 24px;
+  margin-right: 8px;
+}
 a {
   font-weight: 500;
   color: #646cff;

@@ -1,8 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const PortfolioWebsite = () => {
+const Naily = () => {
   return (
     <div className="min-h-screen">
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-lg">
+        <div className="container mx-auto px-6 py-4">
+          <Link 
+            to="/" 
+            className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            返回首頁
+          </Link>
+        </div>
+      </nav>
+      
       {/* 1. Header/Hero Section */}
       <section className="min-h-screen relative overflow-hidden flex items-center">
         {/* Background Image */}
@@ -46,8 +62,8 @@ const PortfolioWebsite = () => {
               {/* Main Portfolio Image */}
               
               {/* Secondary Portfolio Image */}
-              <div className="absolute -left-40 top-40 z-10">
-                <div className="w-[60%] h-[80%]  rounded-lg transform  overflow-hidden">
+              <div className="relative left-70">
+                <div className="w-[100%] h-[100%]  rounded-lg transform  overflow-hidden">
                   <div>
                     <img src="public/images/首頁展示圖.png"  className="w-full h-full object-cover" />
                   </div>
@@ -204,47 +220,41 @@ const PortfolioWebsite = () => {
 
           
           <div className="text-center">
-            <div className='w-100'>
+            <div className='w-100 '>
               <img src="public/images/naily logo.png" alt="Colors Background" className="w-[6%] h-[6%] object-cover mb-[8rem]" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-100 mx-auto">
               {/* Primary Color Card */}
               <div 
-                className=" p-8 bg-cover bg-center bg-no-repeat" 
+                className=" p-8 bg-contain bg-no-repeat" 
                 style={{
                   backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
-                  height: '120%',
-                  width: '100%'
                 }}
               >
-                <img src="public/images/Ellipse 159.png" alt="Colors Background" className="object-cover mb-[8rem]" />
-                <p className="text-white font-semibold drop-shadow-lg">主色 #BE1F48</p>
+                <img src="public/images/Ellipse 159.png" alt="Colors Background" className="object-cover mb-[8rem] " />
+                <p className="text-white font-semibold drop-shadow-lg color-palette-intro">主色 #BE1F48</p>
               </div>
               
               {/* Secondary Color Card */}
               <div 
-                className=" p-8 bg-cover bg-center bg-no-repeat" 
+                className=" p-8 bg-contain bg-no-repeat" 
                 style={{
                   backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
-                  height: '120%',
-                  width: '100%'
                 }}
               >
                 <img src="public/images/Ellipse 160.png" alt="Colors Background" className="object-cover mb-[8rem]" />
-                <p className="text-white font-semibold drop-shadow-lg">次色 #005B96</p>
+                <p className="text-white font-semibold drop-shadow-lg color-palette-intro">次色 #005B96</p>
               </div>
               
               {/* Grayscale Card */}
               <div 
-                className=" p-8 bg-cover bg-center bg-no-repeat" 
+                className=" p-8 bg-contain bg-no-repeat " 
                 style={{
                   backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
-                  height: '120%',
-                  width: '100%'
                 }}
               >
                 <img src="public/images/Ellipse 161.png" alt="Colors Background" className="object-cover mb-[8rem]" />
-                <p className="text-white font-semibold drop-shadow-lg">灰階</p>
+                <p className="text-white font-semibold drop-shadow-lg color-palette-intro">灰階</p>
               </div>
 
             </div>
@@ -345,4 +355,4 @@ const PortfolioWebsite = () => {
   );
 };
 
-export default PortfolioWebsite;
+export default Naily;
