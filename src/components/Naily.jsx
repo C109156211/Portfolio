@@ -165,7 +165,7 @@ const Naily = () => {
             {/* Left side - Text */}
             <div className="text-white">
               <h2 className="text-5xl lg:text-4xl font-bold mb-8 leading-tight">
-                Features
+                使用體驗提升
               </h2>
               <img src="public/images/辨識.png" alt="Features Background" className="w-[100%] h-[100%] object-cover" />
             </div>

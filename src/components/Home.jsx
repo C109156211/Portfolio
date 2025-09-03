@@ -8,19 +8,35 @@ function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             歡迎來到我的作品集
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
             探索我的專案和創意作品
           </p>
+          
+          {/* 關於我按鈕
+          <div className="mb-12">
+            <Link 
+              to="/about" 
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-full text-white font-semibold hover:from-purple-700 hover:to-purple-900 transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              關於我
+            </Link>
+          </div> */}
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Link 
             to="/naily" 
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            className="group relative overflow-hidden rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-contain bg-no-repeat"
+            style={{
+              backgroundImage: 'url("public/backgrounds/features bg.png")',
+            }}
           >
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold mb-4">Naily 專案</h2>
-              <p className="text-gray-200 mb-6">
+              <h2 className="text-3xl font-bold mb-4 text-white drop-shadow-lg">Naily 專案</h2>
+              <p className="text-gray-200 mb-6 drop-shadow-lg">
                 美甲店管理系統，提供完整的預約和會員管理功能
               </p>
               <div className="flex items-center text-blue-200 group-hover:text-white transition-colors">
@@ -30,26 +46,27 @@ function Home() {
                 </svg>
               </div>
             </div>
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </Link>
 
           <Link 
-            to="/about" 
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-600 to-purple-800 p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            to="/japan" 
+            className="group relative overflow-hidden rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-contain bg-no-repeat"
+            style={{
+              backgroundImage: 'url("public/backgrounds/features bg.png")',
+            }}
           >
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold mb-4">關於我</h2>
-              <p className="text-gray-200 mb-6">
-                了解我的技能、經歷和專業背景
+              <h2 className="text-3xl font-bold mb-4 text-white drop-shadow-lg">日語智彙王</h2>
+              <p className="text-gray-200 mb-6 drop-shadow-lg">
+                日語學習應用程式，提供互動式詞彙學習和測驗功能
               </p>
-              <div className="flex items-center text-purple-200 group-hover:text-white transition-colors">
-                <span className="mr-2">深入了解</span>
+              <div className="flex items-center text-orange-200 group-hover:text-white transition-colors">
+                <span className="mr-2">查看專案</span>
                 <svg className="w-5 h-5 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </Link>
         </div>
 
