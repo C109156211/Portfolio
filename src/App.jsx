@@ -8,7 +8,7 @@ import Japan from "./components/Japan.jsx";
 function App() {
   return (
     <Routes>
-      <Route path="/Portfolio" element={<Home />}/>
+      <Route path="/" element={<Home />}/>
       <Route path="/naily" element={<Naily />}/>
       <Route path="/about" element={<About />}/>
       <Route path="/japan" element={<Japan />}/>

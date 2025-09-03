@@ -1,5 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import japanHomeBg from '../assets/backgrounds/日語首頁bg.png';
+import japanP2Bg from '../assets/backgrounds/日語p2 bg.png';
+import p3Bg from '../assets/backgrounds/p3 bg.png';
+import japanHomeImg from '../assets/images/日語 首頁.png';
+import japanBubbleImg from '../assets/images/日語 泡泡.png';
+import japanElevatorImg from '../assets/images/日語電梯.png';
 
 const Japan = () => {
   return (
@@ -24,7 +30,7 @@ const Japan = () => {
         {/* Background Image */}
         <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <img 
-            src="public/backgrounds/日語首頁bg.png" 
+            src={japanHomeBg} 
             alt="Hero Background" 
             className="absolute -translate-x-1/5 -translate-y-1/4 scale-[2]"
             onError={(e) => {
@@ -55,7 +61,7 @@ const Japan = () => {
               <div className="relative left-70">
                 <div className="w-[100%] h-[100%] rounded-lg transform overflow-hidden">
                   <div>
-                    <img src="public/images/日語 首頁.png" className="w-full h-full object-cover" />
+                    <img src={japanHomeImg} className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -68,7 +74,7 @@ const Japan = () => {
       <section className="min-h-screen relative overflow-hidden flex items-center">
         {/* Background with Circular Gradient */}
         <div className="absolute inset-0 bg-[#0b0b0b] overflow-hidden">
-          <img src="public/backgrounds/日語p2 bg.png" alt="Background" className="w-full h-full object-cover" />
+          <img src={japanP2Bg} alt="Background" className="w-full h-full object-cover" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
@@ -94,7 +100,7 @@ const Japan = () => {
         {/* Background Image */}
         <div className="absolute inset-0" style={{backgroundColor: '#0f1819'}}> 
           <img 
-            src="public/backgrounds/p3 bg.png" 
+            src={p3Bg} 
             alt="Features Background" 
             className="w-[200%] h-[200%] object-cover"
               onError={(e) => {
@@ -126,7 +132,7 @@ const Japan = () => {
             
             {/* Right side - Features Panel */}
             <div className="relative">
-              <img src="public/images/日語 泡泡.png" alt="Features Background" className="scale-[1.5] w-[100%] h-[100%] object-cover" />
+              <img src={japanBubbleImg} alt="Features Background" className="scale-[1.5] w-[100%] h-[100%] object-cover" />
             </div>
           </div>
         </div>
@@ -137,7 +143,7 @@ const Japan = () => {
         {/* Background Image */}
         <div className="absolute inset-0" style={{backgroundColor: '#0f1819'}}> 
           <img 
-            src="public/backgrounds/p3 bg.png" 
+            src={p3Bg} 
             alt="Features Background" 
             className="w-[200%] h-[200%] object-cover"
               onError={(e) => {
@@ -166,7 +172,7 @@ const Japan = () => {
                 透過模擬電梯按鈕並清楚標示導航位置，讓使用者有如實際操作電梯般的體驗，進一步提升遊玩感受。
               </h4>
             </div>
-            <img src="public/images/日語電梯.png" alt="Features Background" className="scale-[1.5] w-full max-w-[420px] lg:max-w-[540px] h-auto object-contain mx-auto" />
+            <img src={japanElevatorImg} alt="Features Background" className="scale-[1.5] w-full max-w-[420px] lg:max-w-[540px] h-auto object-contain mx-auto" />
             {/* Right side - Features Panel */}
             <div className="text-white w-full lg:w-[80%] self-end justify-self-end text-right">
               <h2 className="text-5xl lg:text-lg font-bold mb-2 leading-tight">

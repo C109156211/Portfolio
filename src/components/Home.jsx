@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import featuresBg from '../assets/backgrounds/features bg.png';
 
 function Home() {
   return (
@@ -59,12 +60,7 @@ function Home() {
 
             {/* Right: Profile Image (optional) */}
             <div className="relative w-full max-w-md lg:ml-auto">
-              <img
-                src="public/images/profile.jpg"
-                alt="Profile"
-                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
-                onError={(e) => { e.currentTarget.style.display = 'none'; }}
-              />
+              {/* Profile image placeholder - add your image when available */}
             </div>
           </div>
         </section>
@@ -74,7 +70,7 @@ function Home() {
             to="/naily" 
             className="group relative overflow-hidden rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-cover bg-center bg-no-repeat min-h-[220px] md:min-h-[260px]"
             style={{
-              backgroundImage: 'url("public/backgrounds/features bg.png")',
+              backgroundImage: `url(${featuresBg})`,
               border:"1px white solid",
             }}
           >
@@ -96,7 +92,7 @@ function Home() {
             to="/japan" 
             className="group relative overflow-hidden rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-cover bg-center bg-no-repeat min-h-[220px] md:min-h-[260px]"
             style={{
-              backgroundImage: 'url("public/backgrounds/features bg.png")',
+              backgroundImage: `url(${featuresBg})`,
               border:"1px white solid",
             }}
           >

@@ -1,5 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import techBg4 from '../assets/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (4).png';
+import techBg2 from '../assets/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (2).png';
+import techBg1 from '../assets/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (1).png';
+import techBg from '../assets/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style1.png';
+import colorPaletteBg from '../assets/backgrounds/Color Palette Section bg.png';
+import homeShowImg from '../assets/images/首頁展示圖.png';
+import recognitionShowImg from '../assets/images/辨識展示圖.png';
+import recognitionImg from '../assets/images/辨識.png';
+import nailyLogo from '../assets/images/naily logo.png';
+import ellipse159 from '../assets/images/Ellipse 159.png';
+import ellipse160 from '../assets/images/Ellipse 160.png';
+import ellipse161 from '../assets/images/Ellipse 161.png';
+import rwdImg from '../assets/images/RWD.jpg';
 
 const Naily = () => {
   return (
@@ -24,7 +37,7 @@ const Naily = () => {
         {/* Background Image */}
         <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <img 
-            src="public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (4).png" 
+            src={techBg4}
             alt="Hero Background" 
             className="absolute -translate-x-1/5 -translate-y-1/4 scale-[2]"
             onError={(e) => {
@@ -65,7 +78,7 @@ const Naily = () => {
               <div className="relative left-70">
                 <div className="w-[100%] h-[100%]  rounded-lg transform  overflow-hidden">
                   <div>
-                    <img src="public/images/首頁展示圖.png"  className="w-full h-full object-cover" />
+                    <img src={homeShowImg} className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -136,7 +149,7 @@ const Naily = () => {
               {/* Main Portfolio Image */}
               <div className="relative">
                 <div className="w-[100%] h-[100%] transform  overflow-hidden">
-                  <img src="public/images/辨識展示圖.png"  className="w-full h-full object-cover" />
+                  <img src={recognitionShowImg} className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -149,7 +162,7 @@ const Naily = () => {
         {/* Background Image */}
         <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <img 
-            src="public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (2).png" 
+            src={techBg2} 
             alt="Features Background" 
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -167,7 +180,7 @@ const Naily = () => {
               <h2 className="text-5xl lg:text-4xl font-bold mb-8 leading-tight">
                 使用體驗提升
               </h2>
-              <img src="public/images/辨識.png" alt="Features Background" className="w-[100%] h-[100%] object-cover" />
+              <img src={recognitionImg} alt="Features Background" className="w-[100%] h-[100%] object-cover" />
             </div>
             
             {/* Right side - Features Panel */}
@@ -221,17 +234,17 @@ const Naily = () => {
           
           <div className="text-center">
             <div className='w-100 '>
-              <img src="public/images/naily logo.png" alt="Colors Background" className="w-[6%] h-[6%] object-cover mb-[8rem]" />
+              <img src={nailyLogo} alt="Colors Background" className="w-[6%] h-[6%] object-cover mb-[8rem]" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-100 mx-auto">
               {/* Primary Color Card */}
               <div 
                 className=" p-8 bg-contain bg-no-repeat" 
                 style={{
-                  backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
+                  backgroundImage: `url(${colorPaletteBg})`,
                 }}
               >
-                <img src="public/images/Ellipse 159.png" alt="Colors Background" className="object-cover mb-[8rem] " />
+                <img src={ellipse159} alt="Colors Background" className="object-cover mb-[8rem] " />
                 <p className="text-white font-semibold drop-shadow-lg color-palette-intro">主色 #BE1F48</p>
               </div>
               
@@ -239,10 +252,10 @@ const Naily = () => {
               <div 
                 className=" p-8 bg-contain bg-no-repeat" 
                 style={{
-                  backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
+                  backgroundImage: `url(${colorPaletteBg})`,
                 }}
               >
-                <img src="public/images/Ellipse 160.png" alt="Colors Background" className="object-cover mb-[8rem]" />
+                <img src={ellipse160} alt="Colors Background" className="object-cover mb-[8rem]" />
                 <p className="text-white font-semibold drop-shadow-lg color-palette-intro">次色 #005B96</p>
               </div>
               
@@ -250,10 +263,10 @@ const Naily = () => {
               <div 
                 className=" p-8 bg-contain bg-no-repeat " 
                 style={{
-                  backgroundImage: 'url("public/backgrounds/Color Palette Section bg.png")',
+                  backgroundImage: `url(${colorPaletteBg})`,
                 }}
               >
-                <img src="public/images/Ellipse 161.png" alt="Colors Background" className="object-cover mb-[8rem]" />
+                <img src={ellipse161} alt="Colors Background" className="object-cover mb-[8rem]" />
                 <p className="text-white font-semibold drop-shadow-lg color-palette-intro">灰階</p>
               </div>
 
@@ -267,7 +280,7 @@ const Naily = () => {
         {/* Background Image */}
         <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <img 
-            src="/public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style (1).png" 
+            src={techBg1} 
             alt="Team Background" 
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -295,7 +308,7 @@ const Naily = () => {
             {/* Right side - Laptop Mockup */}
             <div className="relative">
             <div className="w-[120%] transform  overflow-hidden">
-                  <img src="public/images/RWD.jpg"  className="w-full h-full object-cover" />
+                  <img src={rwdImg} className="w-full h-full object-cover" />
                 </div>
             </div>
           </div>
@@ -307,7 +320,7 @@ const Naily = () => {
         {/* Background Image */}
         <div className="absolute inset-0" style={{backgroundColor: 'black'}}>
           <img 
-            src="public/backgrounds/Tech Website in Black Orange Blue Cool Corporate Style1.png" 
+            src={techBg} 
             alt="Contact Background" 
             className="w-full h-full object-cover transform scale-[3] origin-center" sizes='100%'
           />
