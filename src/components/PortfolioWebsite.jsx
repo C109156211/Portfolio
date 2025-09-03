@@ -44,21 +44,12 @@ const PortfolioWebsite = () => {
             {/* Right side - Portfolio Images */}
             <div className="relative">
               {/* Main Portfolio Image */}
-              <div className="relative  left-80">
-                <div className="w-[70%] h-[80%] bg-white rounded-3xl shadow-2xl transform  overflow-hidden">
-                  <div>
-                    <div className="text-center text-gray-500">
-                      <img src="public/images/筆電.png" alt="Portfolio Main Image" className="w-full h-full object-cover" />
-                    </div>
-                  </div>
-                </div>
-              </div>
               
               {/* Secondary Portfolio Image */}
               <div className="absolute -left-40 top-40 z-10">
                 <div className="w-[60%] h-[80%]  rounded-lg transform  overflow-hidden">
                   <div>
-                    <img src="public/images/手機 首頁.png"  className="w-full h-full object-cover" />
+                    <img src="public/images/首頁展示圖.png"  className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -128,13 +119,8 @@ const PortfolioWebsite = () => {
             <div className="relative">
               {/* Main Portfolio Image */}
               <div className="relative">
-                <div className="w-[100%] h-[100%] rounded-3xl shadow-2xl transform  overflow-hidden">
-                  <img src="public/images/介紹.png"  className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div className="absolute -left-50 top-80 z-10 z-10">
-                <div className="w-[60%] h-[60%] rounded-3xl transform  overflow-hidden">
-                  <img src="public/images/手機 介紹.png"  className="w-full h-full object-cover" />
+                <div className="w-[100%] h-[100%] transform  overflow-hidden">
+                  <img src="public/images/辨識展示圖.png"  className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
